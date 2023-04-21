@@ -1,0 +1,233 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+@import'./variable';
+
+body{
+    width: 100vw;
+    .navBar{
+        width: 100%;
+        gap: 2rem;
+        background-color: white;
+        z-index: 9999;
+        position: fixed;
+        @media(max-width:768px){
+            justify-content: space-between;
+            padding: .5rem 2rem;
+            z-index: 9999;
+        }
+        .left-sectn{
+            width: 30%;
+            padding-left: 6rem;
+            @media(max-width:768px){
+            padding-left: .2rem;
+            }
+            img{
+                width: 50%;
+                @media(max-width:768px){
+                    width: 100%;
+                }
+            }
+        }
+        .right-sectn{
+            width: 64%;
+            gap: 2.8rem;
+            font-size: 1.2rem;
+            align-items: center;
+            padding-left: 2rem;
+            a{
+                color: black;
+            }
+            @media(max-width:768px){
+                padding-left: 1rem;
+                display: none;
+            }
+        }
+        .hidden-icon{
+            width: 5%;
+            font-size: 2rem;
+            color: black;
+            display: none;
+            @media(max-width:768px){
+                display: block;
+                color: rgb(253,77,64);
+            }
+        }
+    }
+    .hero-sectn{
+        width: 100%;
+        height:97vh;
+        background: url(./assets/homeslide.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        z-index: 2;
+        .overal{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            opacity: .5;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        @media(max-width:768px){
+            height: 40vh;
+            width: 100%;
+            background-position: center;
+        }
+        h1{
+            font-size: 3rem;
+            z-index: 222;
+            @media(max-width:768px){
+            font-size: 1.4rem;
+            justify-content: flex-start;
+            }
+        }
+        p{
+            z-index: 222;
+        }
+        button{
+            width: 160px;
+            padding: 1rem;
+            z-index: 999;
+            border-radius: 2rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: orange;
+            border: none;
+        }
+    }
+    .program{
+        width: 100%;
+        height: 40vh;
+        // gap: .3rem;
+        position: absolute;
+        top:33rem;
+        z-index: 222;
+        
+        @media(max-width:768px){
+            position: static;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .card{
+            display: flex;
+            gap: 1.3rem;
+            height: 100%;
+            flex-direction: column;
+            width: 28%;
+            position: relative;
+            background-color: red;
+            padding: 1rem 2rem;
+            &:hover{
+                margin-bottom: 1rem;
+            }
+            @media(max-width:768px){
+                width: 85%;
+            }
+            i{
+                align-self: center;
+                padding: 1rem;
+                font-size: 2rem;
+                background-color: white;
+                color: black;
+                position: absolute;
+                top: -1.8rem;
+                border-radius: 50%;
+            }
+            svg{
+                width: 70px;
+                align-self: center;
+                padding: 1rem;
+                font-size: 2rem;
+                background-color: white;
+                color: black;
+                position: absolute;
+                top: -1.8rem;
+                border-radius: 50%;
+            }
+            h4{
+                font-family: 'Pacifico', cursive;
+                margin-top: 2rem;
+            }
+            button{
+                width: 50%;
+                padding: 1rem;
+                border-radius: 3rem;
+                border: none;
+                font-size: 1.1rem;
+            }
+        }
+        .card1{
+            background-color: rgb(253,77,64);
+            color: white;
+            button{
+                background-color: #F1C22E;
+                color: white;
+            }
+            i{
+                background-color: rgb(253,77,64);
+                color: white;
+            }
+        }
+        .card2{
+            background-color: #F1C22E;
+            color: white;
+            i{
+                background-color: #F1C22E;
+                color: white;
+            }
+            button{
+                background-color: rgb(22,195,176);
+                color: white;
+            }
+            button{
+                background-color: rgb(22,195,176);
+                color: white;
+            }
+            button{
+                background-color: rgb(22,195,176);
+                color: white;
+            }
+            
+        }
+        .card3{
+            background-color: rgb(22,195,176);
+            color: white;
+            svg{
+                background-color: rgb(22,195,176);
+                color: white;
+            }
+            button{
+                background-color: rgb(253,77,64);
+                color: white;
+            }
+        }
+    }
+    .welcome{
+        width: 100%;
+        height: 30vh;
+        margin-top: 10rem;
+        .left-welcome{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .right-welcome{
+            width: 50%;
+        }
+    }
+}
+

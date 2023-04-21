@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.faci-text {
+  font-family: "Pacifico", cursive;
+}
+
+body {
+  width: 100vw;
+}
+body .navBar {
+  width: 100%;
+  gap: 2rem;
+  background-color: white;
+  z-index: 9999;
+  position: fixed;
+}
+@media (max-width: 768px) {
+  body .navBar {
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    z-index: 9999;
+  }
+}
+body .navBar .left-sectn {
+  width: 30%;
+  padding-left: 6rem;
+}
+@media (max-width: 768px) {
+  body .navBar .left-sectn {
+    padding-left: 0.2rem;
+  }
+}
+body .navBar .left-sectn img {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  body .navBar .left-sectn img {
+    width: 100%;
+  }
+}
+body .navBar .right-sectn {
+  width: 64%;
+  gap: 2.8rem;
+  font-size: 1.2rem;
+  align-items: center;
+  padding-left: 2rem;
+}
+body .navBar .right-sectn a {
+  color: black;
+}
+@media (max-width: 768px) {
+  body .navBar .right-sectn {
+    padding-left: 1rem;
+    display: none;
+  }
+}
+body .navBar .hidden-icon {
+  width: 5%;
+  font-size: 2rem;
+  color: black;
+  display: none;
+}
+@media (max-width: 768px) {
+  body .navBar .hidden-icon {
+    display: block;
+    color: rgb(253, 77, 64);
+  }
+}
+body .hero-sectn {
+  width: 100%;
+  height: 97vh;
+  background: url(./assets/homeslide.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  z-index: 2;
+}
+body .hero-sectn .overal {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  body .hero-sectn .overal {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  body .hero-sectn {
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+  }
+}
+body .hero-sectn h1 {
+  font-size: 3rem;
+  z-index: 222;
+}
+@media (max-width: 768px) {
+  body .hero-sectn h1 {
+    font-size: 1.4rem;
+    justify-content: flex-start;
+  }
+}
+body .hero-sectn p {
+  z-index: 222;
+}
+body .hero-sectn button {
+  width: 160px;
+  padding: 1rem;
+  z-index: 999;
+  border-radius: 2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  border: none;
+}
+body .program {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 33rem;
+  z-index: 222;
+}
+@media (max-width: 768px) {
+  body .program {
+    position: static;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+body .program .card {
+  display: flex;
+  gap: 1.3rem;
+  height: 100%;
+  flex-direction: column;
+  width: 28%;
+  position: relative;
+  background-color: red;
+  padding: 1rem 2rem;
+}
+body .program .card:hover {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  body .program .card {
+    width: 85%;
+  }
+}
+body .program .card i {
+  align-self: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: -1.8rem;
+  border-radius: 50%;
+}
+body .program .card svg {
+  width: 70px;
+  align-self: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: -1.8rem;
+  border-radius: 50%;
+}
+body .program .card h4 {
+  font-family: "Pacifico", cursive;
+  margin-top: 2rem;
+}
+body .program .card button {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.1rem;
+}
+body .program .card1 {
+  background-color: rgb(253, 77, 64);
+  color: white;
+}
+body .program .card1 button {
+  background-color: #F1C22E;
+  color: white;
+}
+body .program .card1 i {
+  background-color: rgb(253, 77, 64);
+  color: white;
+}
+body .program .card2 {
+  background-color: #F1C22E;
+  color: white;
+}
+body .program .card2 i {
+  background-color: #F1C22E;
+  color: white;
+}
+body .program .card2 button {
+  background-color: rgb(22, 195, 176);
+  color: white;
+}
+body .program .card2 button {
+  background-color: rgb(22, 195, 176);
+  color: white;
+}
+body .program .card2 button {
+  background-color: rgb(22, 195, 176);
+  color: white;
+}
+body .program .card3 {
+  background-color: rgb(22, 195, 176);
+  color: white;
+}
+body .program .card3 svg {
+  background-color: rgb(22, 195, 176);
+  color: white;
+}
+body .program .card3 button {
+  background-color: rgb(253, 77, 64);
+  color: white;
+}
+body .welcome {
+  width: 100%;
+  height: 30vh;
+  margin-top: 10rem;
+}
+body .welcome .left-welcome {
+  width: 50%;
+  height: 100%;
+}
+body .welcome .left-welcome img {
+  width: 100%;
+}
+body .welcome .right-welcome {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
